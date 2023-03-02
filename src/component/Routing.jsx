@@ -18,13 +18,11 @@ const Routing=(props)=>{
         setData(resp)
     }
 
-    const auth=AuthenticationService.isUserLoggedIn()
-
     return(
         <appContext.Provider value={data}>
             
             <div className='container'>
-                {auth? <Header/> : null}
+                { AuthenticationService.isUserLoggedIn() && <Header/>}
                 <Routes>
                 
                     <Route path="/" element={<PrivateRoute/>}>
