@@ -19,11 +19,16 @@ const Login=(props)=>{
             .then((response)=>{
                 AuthenticationService.registerUser(username)
                 props.getData(response.data)
-                navigate("/dashboard" ,{state:{data:response.data}})    
+                navigate("/dashboard" )    
             })
             .catch((error)=>{
                 console.log(error)
             })
+
+
+            // AuthenticationService.registerUser(username)
+            // props.getData(["nayana@gmail.com", "Nayan Agarwal", "Pune", "B.Tech", " SDE","Running"])
+            // navigate("/dashboard" )
         }
 
     else{
