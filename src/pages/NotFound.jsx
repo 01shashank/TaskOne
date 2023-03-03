@@ -14,11 +14,11 @@ const NotFound=()=>{
     }
 
     return(
-        <div style={{ "font-size":"35px"}}>
+        <div className='notfound-container'>
             <h1>404 Not Found</h1>
             <p>The page you are looking for is not present</p>
             <div className='row btn-login'>
-                <Button variant='text'  size='medium'  type='primary' onClick={navLogin}>Click Here to get back to Login</Button>
+                <Button variant='text' size='medium'  type='primary' onClick={navLogin}>Click Here to get back to Login</Button>
             </div>
         </div>
     )

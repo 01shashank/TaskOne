@@ -38,9 +38,15 @@
       text-align: center;
     }
 
-  .btn-login{
+  .btn-login-container{
       margin-top: 30px;
       justify-content: center;
+    }
+
+    .btn-login{
+      height: 40px;
+      width:100px;
+      border-radius:20px;
     }
     
   

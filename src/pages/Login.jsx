@@ -50,8 +50,8 @@ const Login=(props)=>{
                     </div>
 
 
-                    <div className='row btn-login'>
-                        <Button variant='contained' style={{height: "40px",width:"100px", "border-radius":"20px"}}  size='medium'  type='primary' onClick={e=>{e.preventDefault();loginUser()}}><b>Submit</b></Button>
+                    <div className='row btn-login-container'>
+                        <Button className="btn-login" variant='contained'  size='medium'  type='primary' onClick={e=>{e.preventDefault();loginUser()}}><b>Submit</b></Button>
                     </div>
                 </div>
             </form>
