@@ -1,8 +1,5 @@
-import {useContext} from 'react'
-import {appContext} from './Routing'
 
 const AboutUs=()=>{
-    const appUseContext = useContext(appContext)
 
     return(
        <div >

@@ -1,13 +1,13 @@
 import {Routes,Route} from 'react-router-dom';
 import { useState, createContext } from 'react';
-import Login from './Login'
-import Dashboard from './Dashboard'
-import Profile from './Profile'
-import AboutUs from './Aboutus'
-import NotFound from './NotFound'
+import Login from '../pages//Login'
+import Dashboard from '../components/Dashboard'
+import Profile from '../components/Profile'
+import AboutUs from '../components/Aboutus'
+import NotFound from '../pages/NotFound'
 import PrivateRoute from './PrivateRoute'
-import Header from './Header'
-import AuthenticationService from './AuthenticationService';
+import Header from '../layout/Header'
+import AuthenticationService from '../services/AuthenticationService';
 
 const appContext = createContext()
 

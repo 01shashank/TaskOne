@@ -1,8 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-import Routing from './component/Routing';
+import './App.scss';
+import Routing from './routes/Routing';
 import {BrowserRouter} from 'react-router-dom'
-import { useState } from 'react';
 
 
 const App=()=> {

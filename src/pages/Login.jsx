@@ -1,10 +1,10 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Dashboard from './Dashboard';
-import axios from 'axios';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField'
-import AuthenticationService from './AuthenticationService';
+import LoginApi from '../apis/LoginApi';
+import AuthenticationService from '../services/AuthenticationService';
+import '../assets/styles/LoginStyle.scss'
 
 
 const Login=(props)=>{
@@ -15,20 +15,16 @@ const Login=(props)=>{
 
     const loginUser=()=>{
         if(username!=="" && password!==""){
-            axios.post("http://localhost:9090/user",{username,password})
+            LoginApi.loginApi(username,password)
             .then((response)=>{
                 AuthenticationService.registerUser(username)
                 props.getData(response.data)
                 navigate("/dashboard" )    
             })
             .catch((error)=>{
-                console.log(error)
+                window.alert('Invalid Credentials')
             })
 
-
-            // AuthenticationService.registerUser(username)
-            // props.getData(["nayana@gmail.com", "Nayan Agarwal", "Pune", "B.Tech", " SDE","Running"])
-            // navigate("/dashboard" )
         }
 
     else{

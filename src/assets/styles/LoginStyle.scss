@@ -1,0 +1,48 @@
+
+  .form-login{
+    left: 50%;
+    top: 50%;
+    margin-left: -15%;
+    position: absolute;
+    margin-top: -17%;
+    height: 350px;
+    width: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border: 1;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: blueviolet;
+
+    .inputs{
+      margin-top: 10px;
+      border-radius: 20px;
+    
+    }
+
+    #username{
+      width: 300px;
+      background-color: white;
+      border-radius: 10px;
+    
+    }
+    #password{
+      width: 300px;
+      background-color: white;
+      border-radius: 10px;
+    
+    }
+    
+    .header1{
+      text-align: center;
+    }
+
+  .btn-login{
+      margin-top: 30px;
+      justify-content: center;
+    }
+    
+  
+  }
+  

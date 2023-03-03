@@ -1,12 +1,6 @@
-import { useEffect } from "react"
-import { useState } from "react"
-import { useNavigate} from 'react-router-dom'
-import Button from '@mui/material/Button';
+import { useEffect,useState } from "react"
 import MUIDataTable from "mui-datatables";
-import AuthenticationService from "./AuthenticationService";
-import axios from 'axios'
-import {Select,MenuItem} from '@mui/material'
-
+import DashboardApi from "../apis/DashboardApi";
 
 
 const Dashboard=(props)=>{
@@ -14,10 +8,9 @@ const Dashboard=(props)=>{
     const[data,setData]  = useState([])
 
     const columns = ["Username","Full Name","Location","Education","Occupation","Hobbies"]
-    //const data = [["nayana@gmail.com", "Nayan Agarwal", "Pune", "B.Tech", " SDE","Running"]]
 
     useEffect(()=>{
-        axios.get("http://localhost:9090/allusers")
+        DashboardApi.getTableData()
         .then((response)=>{
             setData(response.data)
         })
@@ -26,7 +19,7 @@ const Dashboard=(props)=>{
         })
     })
 
-    const options = {   search:false,
+    const options = {   search:true ,
                         filter:false,
                         download:false,
                         print:false,

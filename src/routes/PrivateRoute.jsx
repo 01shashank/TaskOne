@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
-import AuthenticationService from './AuthenticationService';
+import AuthenticationService from '../services/AuthenticationService';
 
 const AuthenticatedRoute = () => {
     const auth = AuthenticationService.isUserLoggedIn(); 
