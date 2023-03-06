@@ -11,6 +11,7 @@ const Profile=()=>{
 
     return (
         <div className="home-page">
+            
             <h1 className="header-profile">Profile Details</h1>
 
             {

@@ -1,6 +1,7 @@
 import { useEffect,useState } from "react"
 import MUIDataTable from "mui-datatables";
 import DashboardApi from "../apis/DashboardApi";
+import '../assets/styles/DashboardStyle.scss'
 
 
 const Dashboard=(props)=>{
@@ -32,8 +33,8 @@ const Dashboard=(props)=>{
     return (
         <div>
 
-            <div >
-                <MUIDataTable 
+            <div  className="dash-table">
+                <MUIDataTable
                     data={data}
                     columns={columns}  
                     options={options}                  

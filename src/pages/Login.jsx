@@ -35,10 +35,9 @@ const Login=(props)=>{
     }
 
     return (
-        <div>
+        <div  className='container-form'>
         
             <form className=' form-login'>
-                <div  className='container-form'>
                     <h1 className='header1'>LOGIN</h1>
 
                     <div className='row inputs'>
@@ -53,7 +52,6 @@ const Login=(props)=>{
                     <div className='row btn-login-container'>
                         <Button className="btn-login" variant='contained'  size='medium'  type='primary' onClick={e=>{e.preventDefault();loginUser()}}><b>Submit</b></Button>
                     </div>
-                </div>
             </form>
         </div>
 

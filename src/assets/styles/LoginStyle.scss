@@ -1,15 +1,19 @@
 
+.container-form{
+  display: flex ;
+  max-width: 100%;
+  min-width: 200px;
+  align-items: center;
+
   .form-login{
-    left: 50%;
-    top: 50%;
-    margin-left: -15%;
-    position: absolute;
-    margin-top: -17%;
+ 
+    position: relative;
     height: 350px;
     width: 350px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
+    margin: 5% auto;
     border: 1;
     border-style: solid;
     border-radius: 20px;
@@ -39,6 +43,7 @@
     }
 
   .btn-login-container{
+    
       margin-top: 30px;
       justify-content: center;
     }
@@ -51,4 +56,5 @@
     
   
   }
+}
   

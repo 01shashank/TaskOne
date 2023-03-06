@@ -33,21 +33,22 @@ const Header=(props)=>{
 
     return(
         <div className="header-container">
-            <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="static">
-                    <Toolbar>
-                        <h2 className="header-one" onClick={dashboard}>Dashboard</h2 >
-                        <h2 className="header-two" onClick={aboutus}>About Us</h2 >                     
+            
+                        <div className="header-one">
+                            <h2 onClick={dashboard}>Dashboard</h2 >
+                        </div>
 
-                        <Select className="header-select" value={2}>
-                            <MenuItem value={1}><Button onClick={profile}>Profile</Button></MenuItem>
-                            <MenuItem value={2}><Button onClick={logout}>Logout</Button></MenuItem>
-
-                        </Select>
-
-                    </Toolbar>
-                </AppBar>
-            </Box>
+                        <div className="header-two">
+                            <h2  onClick={aboutus}>About Us</h2 >                     
+                        </div>
+                        
+                        <div className="header-select-container">
+                            <Select className="header-select"  value={2}>
+                                <MenuItem value={1}><Button onClick={profile}>Profile</Button></MenuItem>
+                                <MenuItem value={2}><Button onClick={logout}>Logout</Button></MenuItem>
+                            </Select>
+                        </div>
+            
         </div>
     )
 }
