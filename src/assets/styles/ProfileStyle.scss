@@ -3,6 +3,8 @@
 .home-page{
   
   display: flex;
+  max-width: 100%;
+  min-width: 400px;
   flex-direction: column;
   justify-content: center;
   align-items: center ;
