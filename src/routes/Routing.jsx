@@ -22,7 +22,7 @@ const Routing=(props)=>{
         <appContext.Provider value={data}>
             
             <div className='container'>
-                { AuthenticationService.isUserLoggedIn() && <Header/>}
+                {AuthenticationService.isUserLoggedIn()  && <Header/>}
                 <Routes>
                 
                     <Route path="/" element={<PrivateRoute/>}>
